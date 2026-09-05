@@ -525,6 +525,13 @@ button {
 
 .founder-head {
   max-width: 18ch;
+}
+
+.founder-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 5rem;
+  align-items: center;
   margin-bottom: 4.5rem;
 }
 
@@ -542,6 +549,10 @@ button {
   font-style: italic;
   color: var(--brown);
   margin: 0;
+}
+
+.founder-intro-media {
+  height: min(58vh, 500px);
 }
 
 .chapter {
@@ -584,6 +595,13 @@ button {
 
 .blend-head {
   max-width: 16ch;
+}
+
+.blend-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 5rem;
+  align-items: center;
   margin-bottom: 4rem;
 }
 
@@ -599,6 +617,10 @@ button {
   max-width: 40rem;
   color: rgba(250, 247, 241, 0.72);
   margin: 1.2rem 0 0;
+}
+
+.blend-intro-media {
+  height: min(58vh, 500px);
 }
 
 .timeline {
@@ -1320,6 +1342,8 @@ button {
   }
 
   .chapter,
+  .founder-intro,
+  .blend-intro-grid,
   .product-grid,
   .std-grid,
   .promise-grid,

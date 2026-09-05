@@ -6,11 +6,20 @@ export default function FounderStory() {
   return (
     <section className="founder" aria-labelledby="founder-title">
       <div className="wrap">
-        <Reveal className="founder-head">
-          <span className="kicker">The founder story</span>
-          <h2 id="founder-title">There was a gap in the market.</h2>
-          <p>I decided to fill it — with something I could be proud of.</p>
-        </Reveal>
+        <div className="founder-intro">
+          <Reveal className="founder-head">
+            <span className="kicker">The founder story</span>
+            <h2 id="founder-title">There was a gap in the market.</h2>
+            <p>I decided to fill it — with something I could be proud of.</p>
+          </Reveal>
+          <Reveal className="media founder-intro-media" delay={0.12}>
+            <LazyImg
+              src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=1400&q=80"
+              alt="Tea garden rows in warm morning light"
+              eager
+            />
+          </Reveal>
+        </div>
 
         {chapters.map((chapter, i) => (
           <article

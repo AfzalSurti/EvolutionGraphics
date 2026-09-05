@@ -10,15 +10,24 @@ export default function BlendJourney() {
   return (
     <section className="blend" aria-labelledby="blend-title">
       <div className="wrap" style={{ position: 'relative' }}>
-        <Reveal className="blend-head">
-          <span className="kicker">01 — 05</span>
-          <h2 id="blend-title">The Search for the Perfect Blend.</h2>
-          <p className="blend-intro">
-            Months with tea traders, tasters and vendors familiar with Assam CTC
-            grades. Testing batch after batch until the cup was right — strength,
-            aroma, colour, a clean finish, real Assam character.
-          </p>
-        </Reveal>
+        <div className="blend-intro-grid">
+          <Reveal className="blend-head">
+            <span className="kicker">01 — 05</span>
+            <h2 id="blend-title">The Search for the Perfect Blend.</h2>
+            <p className="blend-intro">
+              Months with tea traders, tasters and vendors familiar with Assam CTC
+              grades. Testing batch after batch until the cup was right — strength,
+              aroma, colour, a clean finish, real Assam character.
+            </p>
+          </Reveal>
+          <Reveal className="media blend-intro-media" delay={0.12}>
+            <LazyImg
+              src={images.leaves.src}
+              alt="Dark Assam tea leaves ready for tasting"
+              eager
+            />
+          </Reveal>
+        </div>
 
         <div className="leaf-drift" aria-hidden="true">
           <LazyImg src={images.leaves.src} alt="" />
