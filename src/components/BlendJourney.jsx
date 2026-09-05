@@ -29,10 +29,6 @@ export default function BlendJourney() {
           </Reveal>
         </div>
 
-        <div className="leaf-drift" aria-hidden="true">
-          <LazyImg src={images.leaves.src} alt="" />
-        </div>
-
         <div className="timeline">
           {timeline.map((step, i) => (
             <motion.article

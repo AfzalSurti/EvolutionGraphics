@@ -599,7 +599,7 @@ button {
 
 .blend-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
   gap: 5rem;
   align-items: center;
   margin-bottom: 4rem;
@@ -620,7 +620,7 @@ button {
 }
 
 .blend-intro-media {
-  height: min(58vh, 500px);
+  height: min(68vh, 680px);
 }
 
 .timeline {
@@ -655,15 +655,6 @@ button {
   font-family: var(--display);
   font-size: 2rem;
   color: var(--amber-soft);
-}
-
-.leaf-drift {
-  position: absolute;
-  right: 6%;
-  top: 28%;
-  width: 180px;
-  opacity: 0.18;
-  pointer-events: none;
 }
 
 /* MOMENT */
@@ -1370,9 +1361,6 @@ button {
     height: 42vh;
   }
 
-  .leaf-drift {
-    display: none;
-  }
 }
 
 @media (max-width: 720px) {
